@@ -9,7 +9,7 @@ pipeline {
             stage('Test') { 
                 steps { 
                     echo 'Testing..' 
-                    '/Users/apple/.jenkins/workspace/test5/TypeDemo.py'
+                    sh '/Users/apple/.jenkins/workspace/test5/TypeDemo.py'
                 } 
             } 
             stage('Deploy') { 
