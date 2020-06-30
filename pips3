@@ -8,7 +8,7 @@ pipeline {
             } 
             stage('run') { 
                 steps { 
-                    bat 'python test.py)
+                    bat 'python TypeDemo.py)
                 } 
             } 
             stage('Deploy') { 
