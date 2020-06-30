@@ -1,0 +1,20 @@
+pipeline { 
+    agent any
+    stages { 
+        stage('checkout') { 
+            steps { 
+                git([url:'https://github.com/AlyssaZhu/test.git',branch:'master')
+                } 
+            } 
+            stage('run') { 
+                steps { 
+                    bat 'python test.py)
+                } 
+            } 
+            stage('Deploy') { 
+                steps { 
+                    echo 'Deploying....' 
+                } 
+            } 
+        }
+    }
