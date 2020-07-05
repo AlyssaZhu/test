@@ -6,3 +6,4 @@ print(type(e))
 f={"name":"jet","age":18}
 print(type(f))
 print(type(f))
+print(type(f))
